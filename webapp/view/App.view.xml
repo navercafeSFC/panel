@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="com.sfc.panel.controller.App"
+ 	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Panel expandable="true" headerText="SAP Fiori Cafe(SFC)" width="auto" class="sapUiResponsiveMargin">
+		<content>
+        	<TextArea value="반갑습니다^^ SFC 입니다. SFC 카페에서는 SAPUI5, Fiori, BTP(Business Technology Platform), SAC(SAP Analytics Cloud), DI(Data Intelligence), ABAP등 SAP Trend 정보를 공유 하고 있습니다. " width="100%" rows="6" cols="60" />			
+		</content>
+	</Panel>
+	<Panel expandable="true" expand=".onExpand" headerText="UNIT6 Layout - Panel" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<Text text="expandable = true 설정하면 Panel를 확장할수 있는 화살표가 노출 됩니다. \r\n expand='onExpand'설정은 App.controller.js을 확인 해주세요. " />
+		</content>
+	</Panel>    
+	<Panel expandable="true" headerText="Panel with a header text" width="auto" class="sapUiResponsiveMargin">
+		<content>
+				<l:VerticalLayout
+                    class="sapUiContentPadding"
+                    width="100%">
+                    <l:content>
+                        <Button text="Show Message Toast" press=".onMessageToastPress" />
+                </l:content>
+	</l:VerticalLayout>
+		</content>
+	</Panel>    
+    
+
+
+</mvc:View>
